@@ -1,11 +1,11 @@
 <div align="center">
 
-<!--
+# 注意
 ⚠️ 本项目是在原版 LiveCaptions Translator 的基础上，出于个人需求做了一些极其拙劣的涂改和小修小补。
 所有核心功能和绝大部分代码均归原作者所有。
 本人只是为了更好地用本地 Ollama 进行翻译，做了微小的调整。
 如有不妥，敬请原作者海涵。
--->
+
 
 <img src="src/LiveCaptions-Translator.ico" width="128" height="128" alt="LiveCaptions Translator图标"/>
 
