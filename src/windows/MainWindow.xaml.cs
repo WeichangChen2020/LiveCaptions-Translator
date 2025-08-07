@@ -19,6 +19,8 @@ namespace LiveCaptionsTranslator
         {
             InitializeComponent();
             ApplicationThemeManager.ApplySystemTheme();
+            // 注册关闭事件，关闭时隐藏窗口
+            this.Closing += MainWindow_Closing;
 
             Loaded += (s, e) =>
             {
@@ -233,6 +235,14 @@ namespace LiveCaptionsTranslator
                 Timeout = TimeSpan.FromSeconds(5)
             };
             snackbar.Show();
+        }
+
+        // 新增：关闭时隐藏窗口而不退出
+        private void MainWindow_Closing(object? sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            this.Hide();
+            this.ShowInTaskbar = false; // 可选：任务栏也隐藏
         }
     }
 }

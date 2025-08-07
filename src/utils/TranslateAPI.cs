@@ -43,7 +43,7 @@ namespace LiveCaptionsTranslator.utils
 
         private static readonly HttpClient client = new HttpClient()
         {
-            Timeout = TimeSpan.FromSeconds(5)
+            Timeout = TimeSpan.FromSeconds(10)
         };
 
         public static async Task<string> OpenAI(string text, CancellationToken token = default)

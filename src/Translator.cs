@@ -252,7 +252,6 @@ namespace LiveCaptionsTranslator
                 else
                 {
                     translatedText = await TranslateAPI.TranslateFunction(text, token);
-                    translatedText = translatedText.Replace("🔤", "");
                 }
                 if (sw != null)
                 {
